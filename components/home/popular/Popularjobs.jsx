@@ -21,6 +21,9 @@ const Popularjobs = () => {
     num_pages: 1
   })
 
+  const handleCardPress = item => {
+    // router.push()
+  }
   // console.log(data)
 
   return (
@@ -40,7 +43,9 @@ const Popularjobs = () => {
         ) : (
           <FlatList
             data={data}
-            renderItem={item => <PopularJobsCard item={item} />}
+            renderItem={item => (
+              <PopularJobsCard handleCardPress={handleCardPress} item={item} />
+            )}
             keyExtractor={item => item?.job_id}
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal

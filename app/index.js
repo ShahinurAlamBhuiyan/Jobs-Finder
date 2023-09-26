@@ -35,10 +35,7 @@ const Home = () => {
                 <View
                     style={{ flex: 1, padding: SIZES.medium }}
                 >
-                    <Welcome
-
-                    />
-
+                    <Welcome />
                     <Popularjobs />
                     <Nearbyjobs />
                 </View>
