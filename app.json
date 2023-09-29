@@ -9,5 +9,8 @@
     ],
     "name": "job-sector",
     "slug": "job-sector"
-  }
+  },
+  "updates": {
+    "useClassicUpdates": false
+  },
 }
