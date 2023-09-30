@@ -1,14 +1,9 @@
-# Expo Router Example
+# Jobs-Finder Mobile App
+Jobs-finder is a app where user can find real-time jobs.
+- Real time jobs are avaiable from Rapid-API.
+- User can search jobs, filter jobs (part-time, full-time).
+- Can checkout indiviual job description (About, Qualification, Responsibilities).
+- User can apply. 'Apply' button will navigate to the browser and get the portal.
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
-
-## 🚀 How to use
-
-```sh
-npx create-expo-app -e with-router
-```
-
-## 📝 Notes
-
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
+### App interface -->
+![](site1.jpg|width=100px)
