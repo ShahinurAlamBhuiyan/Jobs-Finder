@@ -1,10 +1,10 @@
 import { Stack } from "expo-router";
-import { useCallback, } from "react";
+import { useCallback } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
+import { UserProvider } from "../context/UserContext"; // 👈 import your context
 
 SplashScreen.preventAutoHideAsync();
-
 
 const Layout = () => {
     const [fontsLoaded] = useFonts({
@@ -21,7 +21,11 @@ const Layout = () => {
 
     if (!fontsLoaded) return null;
 
-    return <Stack onLayout={onLayoutRouteView} />;
-}
+    return (
+        <UserProvider>
+            <Stack onLayout={onLayoutRouteView} />
+        </UserProvider>
+    );
+};
 
 export default Layout;
